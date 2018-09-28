@@ -1,0 +1,43 @@
+{{ form_start(form,{'attr': {'novalidate': 'novalidate'}}) }}
+
+<div>
+    {{ form_label(form.name) }}
+    {{ form_widget(form.name,{'attr': {'class': 'test'}})  }}
+    {{ form_errors(form.name) }}
+    {{ form_help(form.name) }}
+</div>
+<div>
+    {{ form_label(form.phone, 'User Phone') }}
+    {{ form_widget(form.phone,{'attr': {'class': 'test'}})  }}
+    {{ form_errors(form.phone) }}
+    {{ form_help(form.phone) }}
+</div>
+
+<div>
+    {{ form_label(form.gender) }}
+    {{ form_widget(form.gender,{'attr': {'class': 'test'}})  }}
+    {{ form_errors(form.gender) }}
+    {{ form_help(form.gender) }}
+</div>
+
+<div>
+    {{ form_label(form.age) }}
+    {{ form_widget(form.age)  }}
+    {{ form_errors(form.age) }}
+    {{ form_help(form.age) }}
+</div>
+<div>
+    {{ form_label(form.email) }}
+    {{ form_widget(form.email)  }}
+    {{ form_errors(form.email) }}
+    {{ form_help(form.email) }}
+</div>
+<div>
+    {{ form_label(form.location) }}
+    {{ form_widget(form.location)  }}
+    {{ form_errors(form.location) }}
+    {{ form_help(form.location) }}
+</div>
+{{ form_end(form) }}
+
+
